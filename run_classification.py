@@ -51,8 +51,8 @@ from transformers.utils.versions import require_version
 # check_min_version("4.37.0.dev0")
 
 # require_version(
-    # "datasets>=1.8.0",
-    # "To fix: pip install -r examples/pytorch/text-classification/requirements.txt",
+# "datasets>=1.8.0",
+# "To fix: pip install -r examples/pytorch/text-classification/requirements.txt",
 # )
 
 

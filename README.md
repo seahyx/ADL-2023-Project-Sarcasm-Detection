@@ -2,7 +2,7 @@
 
 **Seah Ying Xiang - T12902136** \
 **Dao Lan Ha - B09701145** \
-**Paul Ong - T12902130** \
+**Paul Ong - T12902130**
 
 ### This repository hosts the project files and scripts for training our models detect sarcasm in Reddit comments.
 

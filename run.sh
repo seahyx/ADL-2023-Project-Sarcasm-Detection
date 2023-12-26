@@ -1,0 +1,31 @@
+dataset="daniel2588/sarcasm"
+
+python run_classification.py \
+ --model_name_or_path xlnet-base-cased \
+ --dataset_name ${dataset} \
+ --shuffle_train_dataset \
+ --shuffle_seed 12902136 \
+ --metric_name accuracy \
+ --text_column_name "comment" \
+ --text_column_delimiter "\n" \
+ --label_column_name label \
+ --seed 42 \
+ --do_train \
+ --do_eval \
+ --do_predict \
+ --max_seq_length 512 \
+ --per_device_train_batch_size 8 \
+ --per_device_eval_batch_size 8 \
+ --gradient_accumulation_steps 8 \
+ --load_best_model_at_end \
+ --metric_for_best_model accuracy \
+ --learning_rate 2e-5 \
+ --max_steps 10000 \
+ --max_eval_samples 3000 \
+ --overwrite_output_dir \
+ --output_dir ./out/xlnet-base-cased/ \
+ --save_steps 1000 \
+ --eval_steps 1000 \
+ --evaluation_strategy steps \
+ --validation_split 0.2 \
+ --test_split 0.1
